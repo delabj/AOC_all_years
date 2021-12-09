@@ -59,6 +59,6 @@ find_basins <- function(mat){
 
 }
 
-`find_basins(input) |>
+find_basins(input) |>
   head(3) |>
   prod()
