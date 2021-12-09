@@ -22,7 +22,7 @@ find_local_minima <- function(mat){
 #' Part 2
 #' So each basin would be surrounding the minima
 #' the walls are at 9s
-#'
+#' Adapted the logic from @TeaStats on twitter after using a image package to create rater groups
 find_basins <- function(mat){
   rows <- nrow(mat)
   cols <- ncol(mat)
@@ -59,6 +59,6 @@ find_basins <- function(mat){
 
 }
 
-find_basins(input) |>
+`find_basins(input) |>
   head(3) |>
   prod()
